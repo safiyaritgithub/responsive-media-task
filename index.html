@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+  <style>
+ 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+  </style>
+</head>
+<body>
+  <h1>The principles of responsive design 
+   - mobile-friendly website.</h1>
+   <p>Flexible Layouts: Instead of using fixed-width layouts, use relative units like percentages or em to make your layout fluid and adaptable to different screen sizes. This ensures that content will resize and reflow appropriately on various devices.</p>
+<p>Media Queries: CSS media queries allow you to apply different styles based on the characteristics of the device, such as screen width, height, orientation, or resolution.</p>
+  <p>Responsive Images and Media: Use max-width: 100% CSS rule for images and media to ensure they scale down proportionally to fit smaller screens without overflowing their containers. You can also use the picture element or srcset attribute to provide different image sources based on viewport size or device pixel density.</p>
+  <h1> examples of CSS media queries used to adjust layout and styles for different
+    viewport sizes.
+    </h1>
+    <div>
+     <p> body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+    }
+  </p>
+  <p>
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+        }
+    }
+  </p>
+    <p>
+    @media screen and (max-width: 480px) {
+        .container {
+            width: 95%;
+        }
+        h1 {
+            font-size: 20px;
+        }
+    }
+  </p>
+    </div>
+</body>
+</html>
